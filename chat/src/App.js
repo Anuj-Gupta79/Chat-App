@@ -1,8 +1,8 @@
+import { Register } from "./Pages/Register";
+import "./style.scss"
 function App() {
   return (
-    <div>
-      Hello World !
-    </div>
+    <Register/>
   );
 }
 
