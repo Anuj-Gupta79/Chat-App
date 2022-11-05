@@ -1,7 +1,7 @@
 import React from "react";
 import profile from "../Image/Image_upload.png";
 
-export const Register = () => {
+const Register = () => {
   return (
     <div className="formContainer">
       <div className="formWrapper">
@@ -23,3 +23,5 @@ export const Register = () => {
     </div>
   );
 };
+
+export default Register;
