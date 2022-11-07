@@ -78,3 +78,54 @@
     }
   }
 }
+
+.home{
+  background-color: rgb(109, 178, 152);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .container{
+    border: 1px solid white;
+    width: 70%;
+    height: 80%;
+    border-radius: 10px;
+    display: flex;
+    overflow: hidden;
+
+    .sidebar{
+      flex: 1;
+      background-color: rgb(70, 103, 90);
+
+      .navbar{
+        display: flex;
+        align-items: center;
+        background-color: rgb(46, 67, 59);
+        height: 50px;
+        justify-content: space-between;
+        padding: 10px;
+        color: #fff;
+
+        .Logo{
+          font-weight: bold;
+        }
+
+        .user{
+          display: flex;
+
+          img{
+            height: 26px;
+            width: 30px;
+            border-radius: 50%;
+            gap: 10px;
+          }
+        }
+      }
+    }
+
+    .chat{
+      flex: 2;
+    }
+  }
+}
