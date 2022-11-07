@@ -79,14 +79,14 @@
   }
 }
 
-.home{
+.home {
   background-color: rgb(109, 178, 152);
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
 
-  .container{
+  .container {
     border: 1px solid white;
     width: 70%;
     height: 80%;
@@ -94,11 +94,11 @@
     display: flex;
     overflow: hidden;
 
-    .sidebar{
+    .sidebar {
       flex: 1;
       background-color: rgb(70, 103, 90);
 
-      .navbar{
+      .navbar {
         display: flex;
         align-items: center;
         background-color: rgb(41, 57, 51);
@@ -107,31 +107,31 @@
         padding: 10px;
         color: #fff;
 
-        .Logo{
+        .Logo {
           font-weight: bold;
           font-size: 25px;
         }
 
-        .user{
+        .user {
           display: flex;
           gap: 7px;
           justify-content: center;
           align-items: center;
 
-          img{
+          img {
             height: 26px;
             width: 30px;
             border-radius: 50%;
             object-fit: cover;
           }
 
-          span{
+          span {
             font-weight: bold;
             font-size: 3px;
           }
 
-          button{
-            background-color:  rgb(70, 103, 90);
+          button {
+            background-color: rgb(70, 103, 90);
             padding: 3px;
             border-radius: 3px;
             color: #fff;
@@ -141,43 +141,43 @@
         }
       }
 
-      .search{
+      .search {
         border-bottom: 1px solid #fff;
 
-        input{
+        input {
           background-color: transparent;
           color: white;
           padding: 3px;
           border: none;
           outline: none;
 
-          &::placeholder{
+          &::placeholder {
             color: rgb(174, 218, 205);
             font-size: 10px;
           }
         }
 
-        .userChat{
+        .userChat {
           color: #fff;
           display: flex;
           gap: 10px;
           align-items: center;
           cursor: pointer;
 
-          img{
+          img {
             height: 50px;
             width: 50px;
             border-radius: 25px;
             object-fit: cover;
           }
-          &:hover{
+          &:hover {
             background: rgba(74, 138, 112, 0.37);
           }
         }
       }
 
-      .chats{
-        .userChat{
+      .chats {
+        .userChat {
           margin: 10px;
           color: #fff;
           display: flex;
@@ -185,23 +185,23 @@
           align-items: center;
           cursor: pointer;
 
-          img{
+          img {
             height: 50px;
             width: 50px;
             border-radius: 25px;
             object-fit: cover;
           }
-          &:hover{
+          &:hover {
             background: rgba(74, 138, 112, 0.37);
           }
 
-          .userChatInfo{
-            span{
+          .userChatInfo {
+            span {
               font-size: larger;
               font-weight: bolder;
             }
 
-            p{
+            p {
               padding: 2px;
               font-size: 5px;
               font-weight: 300;
@@ -211,8 +211,68 @@
       }
     }
 
-    .chat{
+    .chat {
       flex: 2;
+
+      .chatInfo {
+        display: flex;
+        background-color: rgb(70, 103, 90);
+        justify-content: space-between;
+        height: 70px;
+        align-items: center;
+
+        span {
+          color: #fff;
+          font-size: 20px;
+          padding: 10px;
+          font-weight: 500;
+        }
+
+        .icon {
+          display: flex;
+          gap: 15px;
+          padding: 15px;
+
+          img {
+            height: 30px;
+            cursor: pointer;
+            color: lightgray;
+          }
+        }
+      }
+
+      .messages {
+        background-color: rgba(255, 255, 255, 0.792);
+        padding: 10px;
+        height: calc(100% - 146px);
+      }
+
+      .input {
+        background-color: #fff;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        input{
+          border: none;
+          padding: 4px;
+          outline: none;
+        }
+
+        .inputIcons {
+          img {
+            height: 24px;
+          }
+
+          button {
+            cursor: pointer;
+            padding: 5px;
+            outline: none;
+            border-radius: 5px;
+          }
+        }
+      }
     }
   }
 }
