@@ -177,6 +177,7 @@
       }
 
       .chats {
+        // overflow: scroll;
         .userChat {
           margin: 10px;
           color: #fff;
@@ -245,6 +246,57 @@
         background-color: rgba(255, 255, 255, 0.792);
         padding: 10px;
         height: calc(100% - 140px);
+        overflow: scroll;
+
+        .message{
+          display: flex;
+          gap: 30px;
+          margin-bottom: 20px;
+
+          .userInfo{
+            display: flex;
+            flex-direction: column;
+            color: rgb(100, 119, 100);
+            img{
+              height: 40px;
+              width: 40px;
+              border-radius: 50%;
+              object-fit: cover;
+            }
+          }
+
+          .userContent{
+            max-width: 80%;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            img{
+              width: 50%;
+            }
+
+            p{
+              background-color: #fff;
+              max-width: max-content;
+              padding: 10px 20px;
+              border-radius: 0px 15px 15px 15px;
+            }
+          }
+
+          &.owner{
+            flex-direction: row-reverse;
+
+            .userContent{
+              align-items: flex-end;
+              p{
+                max-width: fit-content;
+                border-radius: 10px 0px 10px 10px;
+                background-color: rgb(100, 119, 100);
+                color: #fff;
+  
+              }
+            }
+          }
+        }
       }
 
       .input {
