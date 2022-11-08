@@ -224,7 +224,7 @@
         span {
           color: #fff;
           font-size: 20px;
-          padding: 10px;
+          padding: 0px 10px;
           font-weight: 500;
         }
 
@@ -244,12 +244,12 @@
       .messages {
         background-color: rgba(255, 255, 255, 0.792);
         padding: 10px;
-        height: calc(100% - 146px);
+        height: calc(100% - 140px);
       }
 
       .input {
+        height: 50px;
         background-color: #fff;
-        padding: 10px;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -258,18 +258,29 @@
           border: none;
           padding: 4px;
           outline: none;
+          width: 100%;
         }
 
         .inputIcons {
+          padding: 10px;
+          display: flex;
+          align-items: center;
+          gap: 15px;
+
           img {
-            height: 24px;
+            height: 25px;
+            cursor: pointer;
           }
 
           button {
             cursor: pointer;
-            padding: 5px;
             outline: none;
+            border: none;
+            padding: 7px 10px;
             border-radius: 5px;
+            background-color: rgb(70, 103, 90);
+            color: #fff;
+            font-size: 5px;
           }
         }
       }
